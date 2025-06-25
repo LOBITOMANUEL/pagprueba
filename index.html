@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Escuela Preparatoria Oficial No. 202 - Formación académica, cultural y deportiva de excelencia">
+  <title>EPO 202 | Escuela Preparatoria Oficial No. 202</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <style>
+    :root {
+      --color-primario: #0d6efd;
+      --color-secundario: #6c757d;
+    }
+    .hero-section {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/hero-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 6rem 0;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      transition: transform 0.3s ease;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    .logo-navbar {
+      height: 40px;
+      margin-right: 10px;
+    }
+    .inscripciones-box {
+      border-left: 4px solid var(--color-primario);
+      padding-left: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Menú de navegación mejorado -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="img/logo.png" alt="Logo EPO 202" class="logo-navbar">
+      <span>Prepa 202</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
+        <li class="nav-item"><a class="nav-link" href="#oferta">Oferta Educativa</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+        <li class="nav-item"><a class="nav-link" href="#inscripciones">Inscripciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        <li class="nav-item"><a class="btn btn-outline-light ms-lg-3" href="#inscripciones">Proceso de Admisión</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Sección Hero -->
+<section id="inicio" class="hero-section text-center">
+  <div class="container">
+    <h1 class="display-4 fw-bold mb-4">Formando líderes del mañana</h1>
+    <p class="lead mb-5">Excelencia académica con valores humanos desde 2009</p>
+    <a href="#inscripciones" class="btn btn-primary btn-lg px-4 me-2">Admisiones</a>
+    <a href="#oferta" class="btn btn-outline-light btn-lg px-4">Programas</a>
+  </div>
+</section>
+
+<!-- Carrusel mejorado -->
+<section class="py-5">
+  <div id="carruselPrepa" class="carousel slide container" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carruselPrepa" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carruselPrepa" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carruselPrepa" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner rounded-3 overflow-hidden">
+      <div class="carousel-item active">
+        <img src="<a href="https://ibb.co/spmMmN8v"><img src="https://i.ibb.co/HLFkFb5D/FB-IMG-1749651661289.jpg" alt="FB-IMG-1749651661289" border="0"> "Eventos culturales y academicos""
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <h5>Desarrollo Integral</h5>
+          <p>Actividades físicas y deportivas para nuestros alumnos</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src=<a href="https://ibb.co/CKfxQrqQ"><img src="https://i.ibb.co/b5kpXfxX/20250611-082726.jpg" alt="20250611-082726" border="0" alt="20250530-082439" border="0" class="d-block w-100" alt="Aulas equipadas para el aprendizaje de los jovenes""
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <h5>Infraestructura Moderna</h5>
+          <p>Aulas equipadas para el mejor aprendizaje</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="<a href="https://ibb.co/jkW5NGD8"><img src="https://i.ibb.co/3mMs3WcT/FB-IMG-1749652928936.jpg" alt="FB-IMG-1749652928936" border="0"></a>
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <h5>Eventos Culturales</h5>
+          <p>Fomentamos el arte y la creatividad</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carruselPrepa" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carruselPrepa" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</section>
+
+<!-- Sección de bienvenida mejorada -->
+<section id="historia" class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-lg-6">
+      <h2 class="fw-bold mb-4">Bienvenidos a la <span class="text-primary">Escuela Preparatoria Oficial No. 202</span></h2>
+      <p class="lead">Más de 15 años formando jóvenes con excelencia académica y valores humanos.</p>
+      <p>Nuestra institución se enorgullece de ofrecer una educación integral que combina lo académico, lo cultural y lo deportivo, preparando a nuestros estudiantes para los desafíos del futuro.</p>
+      <a href="#historia" class="btn btn-outline-primary">Conoce nuestra historia</a>
+    </div>
+    <div class="col-lg-6 mt-4 mt-lg-0">
+      <img src="img/edificio.jpg" alt="Edificio de la Preparatoria 202" class="img-fluid rounded shadow" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- Sección de oferta educativa -->
+<section id="oferta" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">Nuestra <span class="text-primary">Oferta Educativa</span></h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 card-hover">
+          <div class="card-body text-center">
+            <i class="bi bi-book text-primary" style="font-size: 2rem;"></i>
+            <h3 class="card-title h4 mt-3">Bachillerato General</h3>
+            <p class="card-text">Programa integral que prepara para estudios superiores con enfoque en ciencias.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 card-hover">
+          <div class="card-body text-center">
+            <i class="bi bi-calculator text-primary" style="font-size: 2rem;"></i>
+            <h3 class="card-title h4 mt-3">Énfasis en Ciencias</h3>
+            <p class="card-text">Programa con profundización en matemáticas, física, química y biología.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 card-hover">
+          <div class="card-body text-center">
+            <i class="bi bi-palette text-primary" style="font-size: 2rem;"></i>
+            <h3 class="card-title h4 mt-3">Talleres Artísticos</h3>
+            <p class="card-text">Música, teatro, pintura y danza para el desarrollo creativo de nuestros alumnos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan de Estudios - 6 Semestres</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .semester {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .semester-title {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .add-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .add-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Plan de Estudios - 6 Semestres</h1>
+
+    <div class="semester">
+        <h2 class="semester-title">Semestre 1</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th width="70%">Materia</th>
+                    <th width="30%">Profesor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true">Lengua y Comunicacion</td>
+                    <td contenteditable="true">Prof.Moreno Monteagudo Ricardo</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Ingles</td>
+                    <td contenteditable="true">Prof.Almaraz Noguez Nancy Cristel</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Pensamiento Matematico</td>
+                    <td contenteditable="true">Prof.Soto Bernardino Josefina</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Cultura Digital Informatica</td>
+                    <td contenteditable="true">Prof.Noguez Martinez Juan Carlos</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Humanidades</td>
+                    <td contenteditable="true">Prof.Omaña Perez Yasmin</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Ciencias Sociales</td>
+                   <td contextmenu="true">Prof. Omaña Perez Yasmin</td>               
+                </tr>
+                <tr>
+                    <td contenteditable="true">Actividades Fisicas y Deportivas</td>
+                    <td contenteditable="true">Moreno Monteagudo Ricardo</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Educacion para la Salud</td>
+                    <td contenteditable="true">Lara Mondragon Marlene</td>                   
+                </tr>
+                <tr>
+                    <td contenteditable="true">Temas Selectos de Igualdad y Derechos Humanos</td>
+                    <td contenteditable="true">Martinez Sanchez Michel kim </td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Taller de Programacion</td>
+                    <td contenteditable="true">Prof.Soto Bernandino Josefina</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Orientacion</td>
+                    <td contenteditable="true">Prof. Garcia Garcia Lizeth</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="add-btn" onclick="addRow(this)">+ Añadir materia</button>
+    </div>
+
+    <div class="semester">
+        <h2 class="semester-title">Semestre 2</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th width="70%">Materia</th>
+                    <th width="30%">Profesor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true"> Lengua y Comunicacion II</td>
+                    <td contenteditable="true">Moreno Monteagudo Ricardo</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Ingles II</td>
+                    <td contenteditable="true">Almaraz Noguez Nancy Cristel</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Pensamiento Matematico II</td>
+                    <td contenteditable="true">Soto Bernandino Josefina</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Cultura Digital Informatica II</td>
+                    <td contenteditable="true">Noguez Martinez Juan Carlos</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">La Conservacion de la Energia y sus Interacciones de la Materia</td>
+                    <td contenteditable="true">Fonseca Salgado Beatriz</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Taller de Ciencias I</td>
+                    <td contenteditable="true">Rosales Padilla Angel Adrian</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Humanidades II</td>
+                    <td contenteditable="true">Omaña Perez Yasmin</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Ciencias Sociales II</td>
+                    <td contenteditable="true">Omaña Perez Yasmin</td>                    
+                </tr>
+                <tr>
+                    <td contenteditable="true">Actividades Fisicas Deportivas II</td>
+                    <td contenteditable="true">Moreno Monteagudo Ricardo</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Educacion para la Salud</td>
+                    <td contenteditable="true">Lara Mondragon Marlene</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Temas Selectos de Igualdad y Derechos Humanos II</td>
+                    <td contenteditable="true">Martinez Sanchez Michel Kim</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Taller de Programacion</td>
+                    <td contenteditable="true">Soto Bernandino Josefina</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Orientacion</td>
+                    <td contenteditable="true">Garcia Garcia Lizeth</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="add-btn" onclick="addRow(this)">+ Añadir materia</button>
+    </div>
+
+    <div class="semester">
+        <h2 class="semester-title">Semestre 3</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th width="70%">Materia</th>
+                    <th width="30%">Profesor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true">Ingles III</td>
+                    <td contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="add-btn" onclick="addRow(this)">+ Añadir materia</button>
+    </div>
+
+    <div class="semester">
+        <h2 class="semester-title">Semestre 4</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th width="70%">Materia</th>
+                    <th width="30%">Profesor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true">Pensamiento Literario</td>
+                    <td contenteditable="true">Tolentino Perez Maria Guadalupe</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Ingles IV</td>
+                    <td contenteditable="true">Almaraz Noguez Nancy Cristel</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Temas Selectos de Matematicas</td>
+                    <td contenteditable="true">Garduño Hernandez Leslie</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Conciencia Hostorica I</td>
+                    <td contenteditable="true">Omaña Perez Yasmin</td>
+                </tr> 
+                <tr>
+                    <td contenteditable="true">Reacciones Quimicas I</td>
+                    <td contenteditable="true">Noguez Martinez Juan Carlos</td>
+                </tr> 
+                <tr>
+                    <td contenteditable="true">Espacio y Sociedad</td>
+                    <td contenteditable="true">Omaña Perez Yasmin</td>
+                </tr>  
+                <tr>
+                    <td contenteditable="true">Taller de Cultura Digital</td>
+                    <td contenteditable="true">Alcantara Ruiz Manuel</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Ciencias Sociales III</td>
+                    <td contenteditable="true">Jimenez Leon Anel Fabiola</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Comunidades Virtuales</td>
+                    <td contenteditable="true">Cruz Mendoza Maria Lizbeth</td>
+                </tr>  
+                <tr>
+                    <td contenteditable="true">Mantenimiento de Redes de Computo</td>
+                    <td contenteditable="true">Alcantara Ruiz Manuel</td>
+                </tr> 
+                <tr>
+                    <td contenteditable="true">Actividades Artisiticas Culturales I</td>
+                    <td contenteditable="true">Montaño Cfuz Mariana</td>
+                </tr>  
+                <tr>
+                    <td contenteditable="true">Eduacion Itegral en Sexualidad y Genero</td>
+                    <td contenteditable="true">Rosales Padilla Angel Adrian</td>
+                </tr> 
+                <tr>
+                    <td contenteditable="true">Temas Selectos de Igualdad y Derechos Humanos IV</td>
+                    <td contenteditable="true">Martinez Sanchez Michel Kim</td>
+                </tr> 
+                <tr>
+                    <td contenteditable="true">Orientacion</td>
+                    <td contenteditable="true">Gonzalez Delgadillo Guadalupe Ivone</td>
+                </tr>                
+            </tbody>
+        </table>
+        <button class="add-btn" onclick="addRow(this)">+ Añadir materia</button>
+    </div>
+
+    <div class="semester">
+        <h2 class="semester-title">Semestre 5</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th width="70%">Materia</th>
+                    <th width="30%">Profesor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="add-btn" onclick="addRow(this)">+ Añadir materia</button>
+    </div>
+
+    <div class="semester">
+        <h2 class="semester-title">Semestre 6</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th width="70%">Materia</th>
+                    <th width="30%">Profesor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true">Matematicas VI</td>
+                    <td contenteditable="true">Garduño Hernandez Leslie</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Economia II</td>
+                    <td contenteditable="true">Jimenez Leon Anel Fabiola</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Ecologia y Medio Ambiente</td>
+                    <td contenteditable="true">Fonseca Salgado Beatriz</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Historia Universal Contemporanea</td>
+                    <td contenteditable="true">Jimenez Leon Anel Fabiola</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="add-btn" onclick="addRow(this)">+ Añadir materia</button>
+    </div>
+
+    <script>
+        function addRow(button) {
+            const table = button.previousElementSibling.querySelector('tbody');
+            const newRow = table.insertRow();
+            
+            const cell1 = newRow.insertCell(0);
+            const cell2 = newRow.insertCell(1);
+            
+            cell1.contentEditable = true;
+            cell2.contentEditable = true;
+            
+            cell1.textContent = '';
+            cell2.textContent = '';
+        }
+    </script>
+</body>
+</html>
+
+<!-- Sección de Inscripciones -->
+<section id="inscripciones" class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <h2 class="text-center mb-5 fw-bold">Proceso de <span class="text-primary">Inscripción</span></h2>
+      <div class="bg-light p-4 rounded-3 shadow-sm">
+        <h3 class="h4 mb-4">Convocatorias y Requisitos</h3>
+        
+        <div class="inscripciones-box mb-4">
+          <h4 class="h5">Convocatoria 2025</h4>
+          <p>Consulta la convocatoria oficial para el ingreso a educación media superior en los 103 municipios del Estado de México.</p>
+          <a href="https://sems.edomex.gob.mx/inscripciones" 
+             class="btn btn-primary btn-sm" target="_blank">
+            <i class="bi bi-file-earmark-pdf"></i> Ver Convocatoria
+          </a>
+        </div>
+        
+        <div class="inscripciones-box mb-4">
+          <h4 class="h5">Consulta tu CURP</h4>
+          <p>Para realizar tu registro, necesitarás tu Clave Única de Registro de Población (CURP).</p>
+          <a href="https://www.gob.mx/curp/" 
+             class="btn btn-primary btn-sm" target="_blank">
+            <i class="bi bi-person-badge"></i> Consultar CURP
+          </a>
+        </div>
+        
+        <div class="alert alert-info mt-4">
+          <i class="bi bi-info-circle-fill me-2"></i>
+          <strong>Importante:</strong> El proceso de inscripción se realiza en línea a través del portal oficial de la Secretaría de Educación del Estado de México.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        <h2>Costos de la Preparatoria</h2>
+<p>Costo de la inscripción: $850</p>
+<p>Pago por semestre: $1,200</p>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalaciones - Preparatoria Oficial No. 202</title>
+    <style>
+        :root {
+            --color-primario: #1a5276;
+            --color-secundario: #2980b9;
+            --color-texto: #333;
+            --color-fondo: #f5f5f5;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .menu-instalaciones {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 10px 0;
+        }
+        
+        .menu-instalaciones .menu {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: 5px;
+        }
+        
+        .menu-instalaciones .menu li {
+            position: relative;
+        }
+        
+        .menu-instalaciones .menu li a {
+            display: block;
+            padding: 12px 20px;
+            color: var(--color-primario);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+        
+        .menu-instalaciones .menu li a:hover {
+            background-color: var(--color-primario);
+            color: white;
+        }
+        
+        .menu-instalaciones .menu li a.activo {
+            background-color: var(--color-primario);
+            color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        
+        .seccion-instalacion {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            padding: 30px;
+            margin-bottom: 30px;
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .seccion-instalacion.activo {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .galeria img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+        
+        .galeria img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        }
+        
+        footer {
+            background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            .menu-instalaciones .menu {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .galeria {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Instalaciones de la Preparatoria Oficial No. 202</h1>
+        <p>Conoce nuestra infraestructura educativa</p>
+    </header>
+    
+    <div class="menu-instalaciones">
+        <ul class="menu">
+            <li><a href="#" class="activo" data-seccion="general">General</a></li>
+            <li><a href="#" data-seccion="aulas">Aulas</a></li>
+            <li><a href="#" data-seccion="laboratorios">Laboratorios</a></li>           
+            <li><a href="#" data-seccion="cafeteria">Cafetería</a></li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <section id="general" class="seccion-instalacion activo">
+            <h2>Nuestras Instalaciones</h2>
+            <p>La Preparatoria Oficial No. 202 cuenta con instalaciones modernas diseñadas para ofrecer el mejor ambiente educativo a nuestros estudiantes. Nuestro campus incluye:</p>
+            
+            <div class="galeria">
+                <img src="https://i.ibb.co/FbBws0St/20250530-082649.jpg" alt="20250530-082649" alt="Vista general de la preparatoria">
+                <img src="https://i.ibb.co/CKvh7bGg/20250530-082553.jpg" alt="Áreas comunes"> Hacienda en la entrada de el Instituto,en donde los alumnos podra disfrutar
+                <img src="https://i.ibb.co/Mk5b54cq/20250530-082649.jpg" alt="Patio Central">
+            </div>
+            
+            <p>Contamos con 15 aulas académicas, 1 laboratorios equipados, biblioteca con más de 5,000 volúmenes, canchas deportivas y áreas verdes para la convivencia estudiantil.</p>
+        </section>
+        
+        <section id="aulas" class="seccion-instalacion">
+            <h2>Aulas de Clase</h2>
+            <p>Nuestras aulas están diseñadas para el aprendizaje moderno, con:</p>
+            <ul>
+                <li>Mobiliario ergonómico</li>
+                <li>Proyectores interactivos</li>
+                <li>Iluminación natural</li>
+                
+            </ul>
+            
+            <div class="galeria">
+                <img src="https://i.ibb.co/SXYRNF3F/FB-IMG-1749780390513.jpg" alt="Aula de clase">
+                <img src="https://i.ibb.co/PvY7wPhg/FB-IMG-1749780383049.jpg" alt="Aula equipada">
+                <img src="https://i.ibb.co/ccS792YG/FB-IMG-1749780554607.jpg" alt="Aula con tecnología">
+            </div>
+        </section>
+        
+        <section id="laboratorios" class="seccion-instalacion">
+            <h2>Laboratorios Especializados</h2>
+            <p>Áreas equipadas para la práctica y experimentación científica:</p>
+            
+            <h3>Laboratorio de Ciencias</h3>
+            <p>Equipado para prácticas de física, química y biología con medidas de seguridad.</p>
+            
+            <h3>Laboratorio de Informática</h3>
+            <p>Computadoras con software especializado para todas las áreas del conocimiento.</p>
+            
+            <div class="galeria">
+                <img src="https://i.ibb.co/qLhcHtnN/20250530-082329.jpg" alt="Laboratorio de ciencias">
+                <img src="https://i.ibb.co/8DsJ3LbB/20250530-082439.jpg" alt="Laboratorio de informática">
+                <img src="https://i.ibb.co/FjDhgzD/20250530-082505.jpg" alt="Área de prácticas">
+            </div>
+        </section>
+        
+        
+        </section>
+        
+        <section id="biblioteca" class="seccion-instalacion">
+            <h2>Biblioteca</h2>
+            <p>Espacio de consulta y estudio con amplio acervo bibliográfico:</p>
+            
+            <div class="galeria">
+                <img src="https://via.placeholder.com/600x400?text=Sala+de+Lectura" alt="Sala de lectura">
+                <img src="https://i.ibb.co/qLhcHtnN/20250530-082329.jpg" alt="Área de cómputo">
+                <img src="https://via.placeholder.com/600x400?text=Estanterías" alt="Estanterías">
+            </div>
+            
+            <p>Horario de servicio: Lunes a Viernes de 8:00 a 15:00 hrs.</p>
+        </section>
+        
+        <section id="cafeteria" class="seccion-instalacion">
+            <h2>Cafetería</h2>
+            <p>Área de alimentación con menú saludable y variado:</p>
+            
+            <div class="galeria">
+                <img src="https://i.ibb.co/mryDqDkV/IMG-20250530-WA0001.jpg" alt="Área de comedor">
+                <img src="https://i.ibb.co/fGz4znTZ/Men-de-San-Valent-n-ilustrado-rosa-y-rojo-20250612-201510-0000.jpg" alt="Menú saludable">
+            </div>
+            
+            <p>Ofrecemos opciones nutritivas a precios accesibles para la comunidad estudiantil.</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>© 2023 Preparatoria Oficial No. 202 | Todos los derechos reservados</p>
+        <p>Dirección:Jilotepec, Mexico| Teléfono: 55 4807 6034 |</p>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuItems = document.querySelectorAll('.menu-instalaciones .menu li a');
+            
+            menuItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remover clase activo de todos los items
+                    menuItems.forEach(i => i.classList.remove('activo'));
+                    // Agregar clase activo al item clickeado
+                    this.classList.add('activo');
+                    
+                    // Ocultar todas las secciones
+                    document.querySelectorAll('.seccion-instalacion').forEach(sec => {
+                        sec.classList.remove('activo');
+                    });
+                    
+                    // Mostrar la sección correspondiente
+                    const seccionId = this.getAttribute('data-seccion');
+                    document.getElementById(seccionId).classList.add('activo');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ubicación en el mapa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      border: 0;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Ubicación en el mapa</h1>
+  <p>Coordenadas: 20.0533046, -99.6275888</p>
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15056.685653989533!2d-99.6275888!3d20.0533046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1718301234567"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</body>
+</html>
+
+<!-- Sección de contacto -->
+<section id="contacto" class="bg-primary text-white py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h2 class="fw-bold mb-4">Contáctanos</h2>
+        <p><i class="bi bi-geo-alt-fill me-2"></i> Av. Educación #202, Col. Centro, Estado de México</p>
+        <p><i class="bi bi-telephone-fill me-2"></i> Tel: 55 4807 6034</p>
+        <p><i class="bi bi-envelope-fill me-2"></i> contacto@prepa202.edu.mx</p>
+        <div class="mt-4">
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-twitter" style="font-size: 1.5rem;"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-youtube" style="font-size: 1.5rem;"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Nombre completo" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Correo electrónico" required>
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control" placeholder="55 4807 6034">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="3" placeholder="Mensaje" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-light">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Pie de página mejorado -->
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4 mb-md-0">
+        <img src="img/logo-blanco.png" alt="Logo EPO 202" class="mb-3" style="height: 50px;">
+        <p>Formando jóvenes con excelencia desde 2009.</p>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h3 class="h5">Enlaces rápidos</h3>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#inicio" class="text-white text-decoration-none">Inicio</a></li>
+          <li class="mb-2"><a href="#oferta" class="text-white text-decoration-none">Oferta Educativa</a></li>
+          <li class="mb-2"><a href="#inscripciones" class="text-white text-decoration-none">Inscripciones</a></li>
+          <li class="mb-2"><a href="#galeria" class="text-white text-decoration-none">Galería</a></li>
+          <li><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h3 class="h5">Horario de atención</h3>
+        <p>Lunes a Viernes<br>8:00 am - 3:00 pm</p>
+      </div>
+    </div>
+    <hr class="my-4">
+    <div class="text-center">
+      <p class="mb-0">&copy; 2025 Escuela Preparatoria Oficial No. 202. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+   
